@@ -94,50 +94,39 @@ else:
 #编程实现下列图形的打印
 '''
 i=1
-while i<=8 :
-    j=1
-    n=7
-    while j<=8 :
-        if j>=i :
-            print()
-            break
-        else:
-            print("*",end="   ")
-            j+=1
-
-    while n>j :
-        print("  ",end="")
-        n-=1
-
+while i<8 :
+    j=0
+    k=8-i
+    while j<k :
+        print(end="  ")
+        j+=1
+    while k<8 :
+        print("*",end="   ")
+        k+=1
     i+=1
+    print()
 '''
 #使用while循环实现99乘法表的打印
 '''
 i=1
-while i<10 :
+while i<=9 :
     j=1
-    while j<10:
-        if j>i :
-            print()
-            break
-        else:
-            print(j,"*",i,"=",i*j,end="   ")
-            j+=1
+    while j<=i :
+        print(i,"*",j,"=",i*j,end="  ")
+        j+=1
     i+=1
+    print()
 '''
 #编程实现99乘法表的倒叙打印
 '''
 i=9
-while i>=1 :
+while i>0 :
     j=1
-    while j <=10:
-        if j > i:
-            print()
-            break
-        else:
-            print(j, "*", i, "=", i * j, end="   ")
-            j += 1
+    while j <=i:
+        print(j, "*", i, "=", i * j, end="   ")
+        j += 1
     i-=1
+    print()
 '''
 #一只青蛙掉在井里了，井高20米，青蛙白天网上爬3米，晚上下滑2米，问第几天能出来？请编程求出
 '''
